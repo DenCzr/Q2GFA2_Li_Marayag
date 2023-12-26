@@ -1,0 +1,120 @@
+
+*{
+padding: 0;
+margin: 0;}
+
+.navbar{
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: right;
+    padding: 1.5vw;
+    border: 0.1vw solid black;
+    width: 100vw;
+    justify-content: space-around;
+    position: fixed;
+}
+
+body{
+
+    background-image:url(Images/BGBANNER.avif) ;
+    background-size: cover;
+}
+
+.toplink a{
+ 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    margin-right: 10vw;
+    padding: 2vw;
+    text-decoration: none;
+    font-size: 1.5vw;
+    color: white;
+}
+
+.maintext a{
+    color: aliceblue;
+    font-size: 2vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 2vw;
+    padding: 1vw;
+    border: 0.1vw solid black;
+    text-decoration: none;
+}
+.maintext{
+    text-align: center;
+    top: 30%;
+    left: 8%;
+    position: fixed;
+    font-size: 3.5vw;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.maintext h1{
+    color: beige;
+}
+
+.maintext span{
+    color: rgb(66, 22, 185);
+}
+
+.ple{
+    background-image: url(Images/EarthLikePlanet.gif);
+    width: 20vw;
+    height:20vw;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+    animation: leftgo 20s ease 0s infinite;
+    position: fixed;
+}
+
+.sun{
+    background-image: url(Images/SUNNN.gif);
+    width: 95vw;
+    height:100vw;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80%;
+    position: fixed;
+}
+
+.galaxy{
+    animation: rotate 50s ease 0s infinite;
+    background-image: url(Images/Galaxy1.gif);
+    width: 170vw;
+    height:70vw;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 15%;
+    position: fixed;
+}
+
+.bh{
+    animation: grow 5s ease 0s infinite;
+    background-image: url(Images/BlackHole.gif);
+    width: 20vw;
+    height:70vw;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70%;
+    position: fixed;
+}
+
+@keyframes leftgo{
+    0% { transform: translate(-100%);}
+    100% { transform: translate(100vw);}
+}
+
+@keyframes rotate{
+    0%{ transform: rotate(0deg);}
+    25%{transform:rotate(360deg);}
+    100%{transform:rotate(0deg);}
+}
+
+@keyframes grow{
+    0% {transform: scale(100%);}
+    50%{transform:scale(150%);}
+    100%{transform:scale(100%);}
+}
